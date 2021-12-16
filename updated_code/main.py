@@ -1,15 +1,10 @@
 from config import *
 from train import *
-# from test import *
-# from model import *
-# from utils import *
-
-  
+from test import *
 
 def main(is_test):
     if is_test==True:
-        print('start testing!\n')
-        # test(config.TEST)
+        test(config)
     else:
         train(config)
 
@@ -22,5 +17,5 @@ if __name__ == "__main__":
                         help="Do the training or testing, default is 'False'.")
     
     args = parser.parse_args()
-    main(is_test=False)
-    # main(is_test=args.is_test)
+    # main(is_test=True)
+    main(is_test=args.is_test)
