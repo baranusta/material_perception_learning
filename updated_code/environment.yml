@@ -1,0 +1,14 @@
+name: updated_material
+channels:
+  - defaults
+dependencies:
+  - numpy 
+  - pandas 
+  - pip 
+  - python 
+  - tensorflow 
+  - tensorflow-gpu 
+  - pip:
+    - easydict
+    - numpy
+    - opencv-python
